@@ -1,3 +1,3 @@
-#Simple pomodoro type productivity timer
+# Simple pomodoro type productivity timer
 
 Testing out React with firebase
