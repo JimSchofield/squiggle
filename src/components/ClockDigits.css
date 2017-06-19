@@ -1,0 +1,10 @@
+.clockDigits {
+  padding: 8px;
+  letter-spacing: 4px;
+  font-family: monospace;
+  font-size: 48px;
+  font-weight: bolder;
+  background: black;
+  border-radius: 4px;
+  color: white;
+}

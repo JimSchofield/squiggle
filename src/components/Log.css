@@ -1,0 +1,24 @@
+.log {
+	display: table-row;
+	background: white;
+	/*text-align: center;*/
+}
+.log > * {
+	display: table-cell;
+	padding: 8px;
+	vertical-align: center;
+	font-size: 12px;
+}
+
+.log + * > * {
+	border-top: 1px solid #aaa;
+}
+
+.log-headings > p {
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.log h2 {
+	line-height: 1;
+}

@@ -1,0 +1,30 @@
+.navigationBar {
+    background: #333;
+}
+
+.navigationBar ul {
+    display: flex;
+    list-style: none; 
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationBar li a:hover {
+    color: white;
+    background: tomato;
+}
+
+.navigationBar li a {
+    display: inline-block;
+    padding: 16px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.navigationBar .profile {
+    margin: 0 0 0 4px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+

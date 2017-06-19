@@ -1,0 +1,20 @@
+.sessionLogs-container {
+	/*background: #C9DAEA;*/
+	padding: 2em;
+	max-width: 900px;
+	margin: auto;
+}
+
+.sessionLogs-header {
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.sessionLogs {
+	display: table;
+	width: 100%;
+}
+
+.sessionLogs > * {
+	margin: 16px;
+}

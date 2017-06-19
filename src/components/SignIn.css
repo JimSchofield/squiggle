@@ -1,0 +1,10 @@
+.signIn {
+    margin: 1em auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.signIn img {
+    width: 200px;
+    cursor: pointer;
+}

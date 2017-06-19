@@ -1,0 +1,80 @@
+.clockFace {
+  margin: auto;
+  /*background: #5af;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 36px;
+}
+.clockFace > * + * {
+  margin-top: 24px;
+}
+
+.clockFace_RUNNING {
+  background: #C9DAEA;
+}
+.clockFace_PAUSED {
+  background: #C96722;
+}
+.clockFace_READY {
+  background: #00B202;
+}
+.clockFace_BREAK {
+  background: #03F7EB;
+}
+
+
+
+.clockFace-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 268px;
+}
+
+.clockFace-pane > * + * {
+  margin-top: 24px;
+}
+
+.clockFace-buttons * {
+  margin: 0 8px;
+}
+
+.clockFace button {
+  padding: 8px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.clockFace button:active {
+  background: tomato;
+  color: white;
+}
+
+.clockFace input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.clockFace-textarea-container {
+  width: 100%;
+  height: 100%;
+}
+.clockFace textarea {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+.clockFace input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
