@@ -8,7 +8,6 @@ const NavigationBar = (props) => {
         <div className="navigationBar">
             <ul>
                 <li><NavLink to="/">Timer</NavLink></li>
-                <li><NavLink to="/tasks">Tasks</NavLink></li>
                 <li><NavLink to="/stats">Stats</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 { props.currentUser ?

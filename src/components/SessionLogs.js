@@ -28,7 +28,7 @@ const SessionLogs = (props) => {
 	}
 	return (
 		<div className="sessionLogs-container">
-			<h1 className="sessionLogs-header">Today's Sessions:</h1>
+			<h1 className="sessionLogs-header">Your Sessions:</h1>
 			{sessionLogDisplay}
 		</div>
 	);

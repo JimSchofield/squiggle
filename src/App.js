@@ -9,7 +9,6 @@ import './App.css';
 import NavigationBar from './components/NavigationBar';
 import ClockFace from './components/ClockFace';
 import SessionLogs from './components/SessionLogs';
-import Tasks from './components/Tasks';
 import About from './components/About';
 import SignIn from './components/SignIn';
 import NotFound from './components/NotFound';
@@ -110,7 +109,6 @@ class App extends Component {
               </div>
               )}} />
           <Route path="/stats" render={(props) => <SessionLogs logs={this.state.sessionLogs} {...props} />} />
-          <Route path="/tasks" render={(props) => <Tasks />} />
           <Route path="/about" render={(props) => <About />} />
           <Route path="/sign-in" render={(props) => <SignIn setUserName={this.setUserName} />} />
           <Route component={NotFound} />
