@@ -1,3 +1,7 @@
 .root {
 
 }
+
+.warning {
+    font-weight: bold;
+}

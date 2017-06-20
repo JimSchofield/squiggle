@@ -3,11 +3,13 @@ import ClockDigits from './ClockDigits';
 
 import './ClockFace.css';
 
+import EditTimeModal from './EditTimeModal';
+
 export default class ClockFace extends Component {
 
   constructor() {
     super();
-    let totalTimeStarted = 5000;
+    let totalTimeStarted = 25 * 60 * 1000;
     this.state = {
       totalTimeStarted: totalTimeStarted, //default 1500000
       currentTime: totalTimeStarted,
@@ -19,6 +21,7 @@ export default class ClockFace extends Component {
       sessionStartTime: null,
       objective: '',
       description: '',
+      editTime: false,
     }
   };
 
@@ -110,6 +113,22 @@ export default class ClockFace extends Component {
     this.setState({ description: e.target.value})
   }
 
+  handleEditTime = () => {
+    this.setState({
+      editTime: !this.state.editTime
+    })
+  }
+
+  changeTime = (newTime) => {
+    newTime *= 60000;
+    this.setState({
+      totalTimeStarted: newTime,
+      currentTime: newTime,
+      editTime: false,
+    }, this.onReset());
+
+  }
+
   render() {
 
     let status = this.state.sessionStatus;
@@ -129,6 +148,7 @@ export default class ClockFace extends Component {
         break;
     }
 
+
     return (
       <div className={"clockFace " + appStatusCSS} >
         <div className="clockFace-pane">
@@ -147,7 +167,7 @@ export default class ClockFace extends Component {
                 <button onClick={this.onReset}>Reset</button>
               </div>
             }
-
+            <button onClick={this.handleEditTime}>Edit Time</button>
           </div>
         </div>
         <div className="clockFace-pane">
@@ -175,6 +195,16 @@ export default class ClockFace extends Component {
             null
           }
         </div>
+
+        {this.state.editTime ? 
+          <EditTimeModal 
+             handleEditTime={this.handleEditTime}
+             changeTime={this.changeTime} 
+             /> 
+          : 
+          null
+        }
+
       </div>
     )
   }

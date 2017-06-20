@@ -6,8 +6,8 @@
   justify-content: center;
   padding: 36px;
 }
-.clockFace > * + * {
-  margin-top: 24px;
+.clockFace > * {
+  padding: 12px;
 }
 
 .clockFace_RUNNING {
@@ -30,18 +30,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 268px;
+  width: 300px;
 }
 
 .clockFace-pane > * + * {
   margin-top: 24px;
 }
 
-.clockFace-buttons * {
-  margin: 0 8px;
+.clockFace-buttons {
+  display: flex;
 }
 
 .clockFace button {
+  margin: 8px;
   padding: 8px;
   background: white;
   border: none;
